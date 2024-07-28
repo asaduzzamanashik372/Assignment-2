@@ -22,6 +22,9 @@
     margin: 0 auto;
     padding: .5rem 19.8rem;
 }
+#mobile-menu{
+    visibility: hidden;
+}
 .nav-title{
     font-size: 2.5rem;
 font-weight: 800;
@@ -44,6 +47,11 @@ color: rgb(230, 83, 60);
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+.home{
+    background-color: rgb(230, 83, 60);
+    padding: 0px 6px;
+    border-radius: 20px;
+}
 
 .banner-container{
     max-width: 1440px;
@@ -56,40 +64,110 @@ color: rgb(230, 83, 60);
 }
 .banner-text-container{
     max-width: 35rem;
+    margin-right: 17rem;
 }
 .banner-title{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
 }
+.Shape-font{
+    font-size: 7rem;
+    font-weight: 400;
+}
+.banner-description{
+    color:rgba(255, 255, 255, 0.5) ;
+}
+
 .btn-primary{
     font-size: 1.2rem;
     font-weight: 600;
     background-color: rgb(230, 83, 60);
     color: white;
     width: 17rem;
-height: 4rem;
-margin-bottom: 3rem;
-margin-right: .3rem;
-border: none;
-border-radius: 42px;
-margin-top: 1.5rem;
+    height: 4rem;
+    margin-bottom: 3rem;
+    margin-right: .3rem;
+    border: none;
+    border-radius: 42px;
+    margin-top: 1.5rem;
+}
+.btn-primary > a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary-two{
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color:transparent;
+    color: white;
+    width: 17rem;
+    height: 4rem;
+    margin-bottom: 3rem;
+    margin-right: .3rem;
+    border: 1px solid white;
+    border-radius: 42px;
+    margin-top: 1.5rem;
+}
+.btn-primary-two > a{
+    text-decoration: none;
+    color: white;
 }
 .banner-img-container{
-    margin-left: 19rem;
+    
+    display: flex;
 }
+.banner-button-one{
+   width:150px;
+   height: 80px;
+   margin-left: -31.6rem;
+   margin-top: 27.9rem;
+   color: white;
+   background-color: rgba(77, 73, 73, 0.493);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 8px;
+}
+.on{
+    font-size: 1.5rem;
+    font-weight: 900;
+    
+}
+.to{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.on-clr, .to-clr{
+    color:rgba(255, 255, 255, 0.5);
+}
+.banner-button-two{
+    width:170px;
+   height: 80px;
+    margin-top: 12.5rem;
+    margin-left: 13.125rem;
+    color: white;
+    background-color: rgba(77, 73, 73, 0.493);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
 .habits-container{
     max-width: 1440px;
     margin: 0 auto;
-    text-align: center;
     margin-top: 7rem;
+    text-align: center;
     
 }
 .habits-title{
     font-weight: 900;
     font-size: 3rem;
     margin-bottom: 1rem;
+
+
+}
+.habits-description{
+    color:rgba(255, 255, 255, 0.5);
 }
  
 .habits-image-container{
@@ -126,10 +204,12 @@ margin-top: 1.5rem;
     font-weight: 900;
     margin: 1rem;
 }
+
 .run-description{
     font-size: 0.875rem;
     font-weight: 400;
     margin-left: 1rem;
+    color:rgba(255, 255, 255, 0.5);
 }
 .run-text-container > .btn-primary{
     margin-left: 1rem;
@@ -142,6 +222,7 @@ margin-top: 1.5rem;
 }
 .bmi-upper-text > p{
     margin-top: 1rem;
+    color:rgba(255, 255, 255, 0.5);
 }
 
     .bmi-upper-text > h1{
@@ -219,12 +300,15 @@ margin-top: 1.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
  }
+ .team-upper-text > p{
+    color: rgba(255, 255, 255, 0.6);
+ }
  .team-container{
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 3.2rem;
  }
     .team-title{
         margin-top: 12.5rem;   
@@ -233,50 +317,197 @@ margin-top: 1.5rem;
  
  .image-one{
     background-image: url(../images/trainer1.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.300);
     width: 326.67px;
     height: 272px;
-    border-radius: 20px;
+    border-radius: 15px;
+    
  }
  .image-two{
     background-image: url(../images/trainer2.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.300);
     width: 326.67px;
     height: 272px;
-    border-radius: 20px;
+    border-radius: 15px;
+    
  }
  .image-three{
     background-image: url(../images/trainer3.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.300);
     width: 326.67px;
     height: 272px;
-    border-radius: 20px;
+    border-radius: 15px;
+    
  }
  .image-four{
     background-image: url(../images/trainer4.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.300);
     width: 326.67px;
     height: 272px;
-    border-radius: 20px;
+    border-radius: 15px;
+   
  }
  .image-five{
     background-image: url(../images/trainer5.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.300);
     width: 326.67px;
     height: 272px;
-    border-radius: 20px;
+    border-radius: 15px;
+    
  }
  .image-six{
     background-image: url(../images/trainer6.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.300);
     width: 326.67px;
     height: 272px;
-    border-radius: 20px;
+    border-radius: 15px;
+    
+ }
+ .footer-container{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    gap: 12rem;
+    padding: 7rem 25rem;
+    padding-bottom: 1rem;
+    margin-top: 7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    
+
  }
 
+ 
+.footer-title{
+    font-size: 2rem;
+
+}
+#footer-fitness{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: rgb(230, 83, 60);
+    margin-top: 0rem;
+}
+.footer-div-one-description{
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-one > a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer-two > a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer-three > a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.footer-inner-container{
+    display: flex;
+}
+.footer-end{
+    max-width: 400px;
+  margin-left: 800px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width:576px) {
+    .list-items{
+        display: none;
+       
+        
+    }
+  
+    .banner-text-container{
+        margin: 1px;
+    }
+    .banner-img-container{
+        margin: 5px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .banner-button-one{
+        visibility: hidden;
+    }
+    .banner-button-two{
+        width: 200px;
+        height: 80px;
+    }
+    .nav-container{
+        padding: 5px;
+        align-items: center;
+    }
+    .btn-primary{
+        margin-bottom: 6px;
+    }
+    .banner-container{
+        flex-direction: column;
+        padding: 5px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .habits-image-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px;
+    }
+    .run-container{
+        flex-direction: column;
+        margin: 5px;
+    }
+    .run-img-container > img{
+        max-width: 400px;
+        max-height:  200px;
+        border-radius: 20px;
+    }
+    .run-img-container{
+        margin-top: 20px;
+    }
+    .bmi-container{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 24px;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 0px;
+        margin:30px 0px 0px 0px ;
+        gap: 5px;
+    }
+    .footer-end{
+        margin: 0px;
+        padding: 0px;
+
+    }
+ 
+    
+}
